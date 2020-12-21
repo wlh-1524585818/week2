@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>vip添加表</title>
+</head>
+<body>
+<form action="{:url('api/Vip/save')}" method="post">
+    <div class="form-group" style="width: 60%;margin-left: 300px;margin-top: 20px">
+        <label for="exampleInputEmail1">用户名</label>
+        <input type="text" name="vipname" class="form-control"  aria-describedby="emailHelp">
+    </div>
+    <div class="form-group" style="width: 60%;margin-left: 300px;margin-top: 20px">
+        <label for="exampleInputEmail1">邮箱</label>
+        <input type="email" name="vipemail" class="form-control"  aria-describedby="emailHelp">
+    </div>
+    <div class="form-group" style="width: 60%;margin-left: 300px;margin-top: 20px">
+        <label for="exampleInputEmail1">手机号</label>
+        <input type="text" name="viptel" class="form-control"  aria-describedby="emailHelp">
+    </div>
+    <div style="width: 60%;margin-left: 300px;margin-top: 20px">
+        <button type="submit" class="btn btn-primary">提交</button>
+        <button type="reset" class="btn btn-danger">重置</button>
+    </div>
+</form>
+</body>
+</html>
